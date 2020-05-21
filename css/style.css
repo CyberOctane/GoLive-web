@@ -4,6 +4,7 @@
 
 body {
     margin: 0;
+    background-color: #111;
 }
 
 a {
@@ -13,7 +14,7 @@ a {
 
 .container {
     position: relative;
-    padding-top: 80px;
+    padding-top: 100px;
     min-height: 100vh;
 }
 
@@ -33,7 +34,7 @@ a {
     z-index: 4;
     width: 100%;
     height: 80px;
-    background-color: white;
+    background-color: #111;;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,10 +45,17 @@ a {
     width: 80px;
     position: relative;
     z-index: 4;
+    border-radius: 20px;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-logo img {
-    width: 80px;
+    width: 50px;
+    width: 50px;
 }
 
 @media(min-width:768px){
@@ -72,21 +80,35 @@ a {
 }
 
 .event-card {
-    background-color: white;
-    height: 20vw;
-    width: 90%;
+    position: relative;
+    background-color: #111;
+    height: 60vh;
+    width: 80%;
     border-radius: 20px;
-    box-shadow: 0px 10px 20px #999;
+    box-shadow: 0px 5px 20px #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .event-card a {
+    position: absolute;
     display: block;
     height: 100%;
     width: 100%;
+    overflow: hidden;
+}
+
+.event-card img {
+    max-width: 100%;
+    max-height: 60vh; /* equals to card height */
+    border-radius: 20px;
 }
 
 
 /* ------------------------ Footer ------------------------*/
 
 .footer {
+    padding: 20px;
 }
