@@ -10,6 +10,10 @@
     background-color: #000;0
 }
 
+.stage.section .head {
+    width: 100%;
+}
+
 #player {
     max-width: 94vw;
 }
@@ -17,7 +21,6 @@
 .live-comment {
     height: 40vh;
     width: 100%;
-    padding: 5%;
 }
 
 .field {
