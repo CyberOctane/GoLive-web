@@ -19,10 +19,27 @@
     margin: 15px 0;
 }
 
-.stage.section .head h6{
-    border-radius: 10px;
+.stage.section .head .live-bulb {
+    border-radius: 4px;
     background-color: red;
-    padding: 5px 8px;
+    padding: 7px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stage.section .head .dot{
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: white;
+    margin-left: 5px;
+    animation: flash 0.25s infinite alternate;
+}
+
+@keyframes flash {
+    0% { opacity: 0;}
+    100% { opacity 1;}
 }
 
 #player {
