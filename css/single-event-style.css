@@ -7,11 +7,22 @@
 
 .stage.section {
     max-width: 100%;
-    background-color: #000;0
+    background-color: #000;
 }
 
 .stage.section .head {
     width: 100%;
+    padding-top: 0; 
+}
+
+.stage.section .head hr {
+    margin: 15px 0;
+}
+
+.stage.section .head h6{
+    border-radius: 10px;
+    background-color: red;
+    padding: 5px 8px;
 }
 
 #player {
@@ -27,6 +38,6 @@
     height: 50px;
     border: 1px white solid;
     border-radius: 10px;
-    margin: 20px 0;x
+    margin: 20px 0;
 }
 

@@ -34,6 +34,11 @@ h3 {
     font-size: 14px;
     margin: 8px 0px;
 }
+    
+h6 {
+    font-weight: 700;
+    margin: 8px 0px;
+}
 
 hr {
     margin: 8px 0px;
