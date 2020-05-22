@@ -184,19 +184,20 @@ hr {
     width: 100%;
 }
 
-.event-card .info .button {
-    background-color: #22aa99;
+.event-card .button {
+    position: absolute;
+    background-color: #AA2222;
     padding: 10px;
     border-radius: 4px;
 }
 
-.event-card.disabled .info .button {
-    background-color: #999999;
+.event-card.disabled .button {
+    background-color: #666;
     padding: 10px;
     border-radius: 4px;
 }
 
-.event-card.disabled .info .button h6 {
+.event-card.disabled .button h6 {
     color: #999;
 }
 
