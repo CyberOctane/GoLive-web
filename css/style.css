@@ -184,6 +184,22 @@ hr {
     width: 100%;
 }
 
+.event-card .info .button {
+    background-color: #22aa99;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.event-card.disabled .info .button {
+    background-color: #999999;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.event-card.disabled .info .button h6 {
+    color: #999;
+}
+
 .blank {
     background-color: cornflowerblue;
     height: 100%;
