@@ -12,5 +12,18 @@
 
 #player {
     max-width: 94vw;
-} 
+}
+
+.live-comment {
+    height: 40vh;
+    width: 100%;
+    padding: 5%;
+}
+
+.field {
+    height: 50px;
+    border: 1px white solid;
+    border-radius: 10px;
+    margin: 20px 0;x
+}
 

@@ -20,22 +20,46 @@ h1,h2,h3,h6 {
 
 h1 {
     font-weight: 900;
+    margin: 0;
 }
 
 h2 {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 20px;
+    margin: 8px 0px;
 }
 
 h3 {
     font-weight: 400;
-    font-size: 16px;
-    margin: 10px 0;
+    font-size: 14px;
+    margin: 8px 0px;
+}
+
+hr {
+    margin: 8px 0px;
+}
+
+@media(min-width:768px) {
+    
+    h1 {
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    hr {
+
+    }
 }
 
 .container {
     position: relative;
-    padding-top: 100px;
     min-height: 100vh;
 }
 
@@ -46,10 +70,16 @@ h3 {
     align-items: center;
 }
 
+.row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 /* ------------------------ Navbar ------------------------*/
 
 .nav {
-    position: fixed;
     left: 0;
     top: 0;
     z-index: 4;
@@ -63,7 +93,7 @@ h3 {
 }
 
 .nav-logo {
-    width: 80px;
+    width: 60px;
     position: relative;
     z-index: 4;
     border-radius: 20px;
@@ -75,7 +105,7 @@ h3 {
 }
 
 .nav-logo img {
-    width: 50px;
+    width: 40px;
 }
 
 /* ------------------------ Hero ------------------------*/
@@ -97,9 +127,8 @@ h3 {
 
 .event-card {
     position: relative;
-    margin: 20px;
-    background-color: ;
-    height: ;
+    margin-bottom: 20px;
+    height: 70vh;
     width: 80%;
     border-radius: 20px;
     box-shadow: 0px 5px 20px #000;
@@ -119,9 +148,9 @@ h3 {
 
 .event-card .image {
     min-width: 100%;
-    max-height: 50vh; /* lower than card height */
+    max-height: 35vh;
+    height: 35vh;/* lower than card height */
     border-radius: 20px 20px 0px 0px;
-    background-color: aqua;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -134,7 +163,8 @@ h3 {
 
 .event-card .info {
     width: 100%;
-    padding: 20px;
+    height: 35vh;
+    padding: 20px 40px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -143,6 +173,17 @@ h3 {
 
 .event-card .info hr {
     width: 100%;
+}
+
+.blank {
+    background-color: cornflowerblue;
+    height: 100%;
+    width: 100%;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -177,4 +218,8 @@ h3 {
 
 .footer {
     padding: 20px;
+}
+
+.footer a {
+    font-size: 10px;
 }
